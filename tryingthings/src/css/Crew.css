@@ -1,0 +1,19 @@
+.crew {
+    background-image: url(../Images/ImageCrew/background-crew-mobile.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding-top: 150px;
+}
+
+@media (min-width: 756px) and (max-width: 1200px) {
+    .crew {
+        background-image: url(../Images/ImageCrew/background-crew-tablet.jpg);
+    }
+}
+
+@media (min-width: 1200px) {
+    .crew {
+        background-image: url(../Images/ImageCrew/background-crew-desktop.jpg);
+    }
+}
