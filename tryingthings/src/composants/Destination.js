@@ -1,33 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../css/Destination.css';
+import { planet } from './Planet.js';
+
 
 
 function Destination() {
+
+  let  [ ElClicked, setElClicked ] = useState(planet[0]);
+
+  function handleClick(e) { 
+      setElClicked(planet[e.target.id])
+    }
+
+
   return (
     <div className='destination'>
     <h2>01 Pick your destination</h2>
     <div className='destination-menu'>
-        <button>Moon</button>
-        <button>Mars</button>
-        <button>Europa</button>
-        <button>Titan</button>
+        <button id='0' onClick={handleClick}>Moon</button>
+        <button id='1' onClick={handleClick}>Mars</button>
+        <button id='2' onClick={handleClick}>Europa</button>
+        <button id='3' onClick={handleClick}>Titan</button>
     </div>
     <div className='destination-visual'>
-    picture
+      <img src={ElClicked.image} alt={ElClicked.name}/>
     </div>
     
     <div className='destination-description'>
-       <h3>Mars</h3>
-       <p>Don't forget to pack your hiking boots. You'll need them 
-        to tackle Olympus Mons, the tallest planetary mountain in
-        our solar system. It's two and a half times the size of
-        Everest!</p>
+       <h3>{ElClicked.name}</h3>
+       <p>{ElClicked.descritpion}</p>
         <hr></hr>
         <div className='destination-distance'>
             <p>AVG. DISTANCE </p>
             <p>EST. TRAVEL TIME </p>
-            <p><span>225 MIL. KM</span></p>
-            <p><span>9 MONTHS</span></p>
+            <p><span>{ElClicked.distance}</span></p>
+            <p><span>{ElClicked.time}</span></p>
         </div>
     </div>
     </div>

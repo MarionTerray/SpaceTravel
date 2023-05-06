@@ -54,12 +54,14 @@
 }
 
 .destination-visual {
-    background-image: url(../Images/image-mars.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 350px;
     height: 350px;
     margin: 10% 5% 5% 25% ; 
+}
+.destination-visual > img {
+    width: 100%;
 }
 
 .destination-description {
