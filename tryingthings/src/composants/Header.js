@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import MenuIcon from '@mui/icons-material/Menu';
-import HiveIcon from '@mui/icons-material/Hive';
+import Logo from '../logo.svg';
 
 function Header() {
 
@@ -21,9 +21,9 @@ function Header() {
 
   return (
     <div className='header'>
-        <div className='logo'>
-        <HiveIcon fontSize='large' className='iconLogo'/>
-        </div>
+        <a className='logo' href='/home'>
+          <img src={Logo} alt='logo'/>
+          </a>
         <div className='lineHeader'>
           <hr />
         </div>
