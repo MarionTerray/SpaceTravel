@@ -1,7 +1,8 @@
 import React from 'react';
-import '../css/Home.css'
+import '../css/Home.css';
 
 function Home() {
+
   return (
     <div className='home'>
       <div className='text'>
@@ -12,9 +13,10 @@ function Home() {
           edge of it. Well sit back, and relax because we'll give you 
           a truly out of this world experience!</p>
       </div>
-      <div className='exploreBtn'>
-        <a href='/'>EXPLORE</a>
-      </div>
+      <a className='exploreBtn' href='/destination'>
+        <p>EXPLORE</p>
+      </a>
+      
     </div>
     
   )

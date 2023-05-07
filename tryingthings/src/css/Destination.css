@@ -5,6 +5,7 @@
     width: 100%;
     height: 100vh;
     padding-top: 150px;
+    padding-left: 2%;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: max-content;
@@ -13,12 +14,14 @@
 @media (min-width: 756px) and (max-width: 1200px) {
     .destination {
         background-image: url(../Images/background-destination-tablet.jpg);
+        padding-left: 3%;
     }
 }
 
 @media (min-width: 1200px) {
     .destination {
         background-image: url(../Images/background-destination-desktop.jpg);
+        padding-left: 5%;
     }
     
 }
@@ -31,7 +34,6 @@
     margin-left: 10%;
 }
 .destination-menu {
-    /*background-color: rgba(61, 54, 88, 0.177);*/
     height: 70px;
     width: fit-content;
     margin-top: 100px;
