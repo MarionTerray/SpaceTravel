@@ -1,19 +1,114 @@
 .technology {
-    background-image: url(../Images/ImageTechnology/background-technology-mobile.jpg);
+    background-image: url(../Images/ImageTechnology/background-technology-desktop.jpg);
     background-size: cover;
     width: 100%;
     height: 100vh;
     padding-top: 150px;
 }
 
+.technology > h2 {
+    color: white;
+    margin-left: 12%;
+}
+
+.technology-detail {
+    display: flex;
+    flex-direction: row;
+    width: 89%;
+    margin-left: 12%;
+    margin-top: 60px;
+}
+.technology-btn {
+    width: 100px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.technology-btn > button {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin: auto;
+    background-color: transparent;
+    border: white 1px solid;
+    font-size: 1.3em;
+    color: white;
+}
+
+.technology-btn > button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.technology-description {
+    max-width: 600px;
+    padding: 20px 50px 30px 40px;
+    color: white;
+    margin-top: 25px;
+}
+.technology-description > h3 {
+    font-size: 3em;
+    font-weight: 100;
+    margin: 0;
+}
+
+.technology-image {
+    width: 400px;
+    height: 420px;
+}
+.technology-image > img {
+    width: 100%;
+}
 @media (min-width: 756px) and (max-width: 1200px) {
     .technology {
         background-image: url(../Images/ImageTechnology/background-technology-tablet.jpg);
     }
 }
 
-@media (min-width: 1200px) {
+
+@media (max-width: 1200px) {
     .technology {
-        background-image: url(../Images/ImageTechnology/background-technology-desktop.jpg);
+        width: 100%;
+        height: 100%;
+    }
+    .technology-btn {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        height: 200px;
+        margin: auto;
+    }
+    .technology-btn > button {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .technology-detail {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .technology-description {
+        width: 80%;
+        margin: auto;
+        padding-bottom: 50px;
+    }
+    .technology-image {
+        width: 40%;
+        margin: auto;
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 756px) {
+    .technology {
+        background-image: url(../Images/ImageTechnology/background-technology-mobile.jpg);
+    }
+    .technology-btn > button {
+        margin: auto;
+    }
+    .technology-image {
+        width: 60%;
     }
 }
