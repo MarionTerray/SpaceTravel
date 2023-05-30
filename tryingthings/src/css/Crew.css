@@ -1,9 +1,56 @@
 .crew {
-    background-image: url(../Images/ImageCrew/background-crew-mobile.jpg);
+    background-image: url(../Images/ImageCrew/background-crew-desktop.jpg);
     background-size: cover;
     width: 100%;
     height: 100vh;
     padding-top: 150px;
+    color: white;
+}
+
+.crew > h2 {
+    margin-left: 8%;
+}
+
+.crewContent {
+    width: 85%;
+    height: 75%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin: auto;
+    position: relative;
+    padding-top: 35px;
+}
+.crewContent > img {
+    max-width: 90%;
+    max-height: 100%;
+    margin: auto;
+    grid-column: 2;
+    grid-row: 1 / span 2;
+}
+.crewBtn {
+    width: 40%;
+    height: 30px;
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    position: absolute;
+    bottom: 18%;
+    left: 10%;
+}
+.crewBtn > button {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    margin: 5px;
+}
+.crewBtn > button:hover {
+    cursor: pointer;
+}
+
+.crewPresentation {
+    margin: auto;
+    padding-left: 10%;
+    width: 80%;
 }
 
 @media (min-width: 756px) and (max-width: 1200px) {
@@ -12,8 +59,8 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 756px) {
     .crew {
-        background-image: url(../Images/ImageCrew/background-crew-desktop.jpg);
+        background-image: url(../Images/ImageCrew/background-crew-mobile.jpg);
     }
 }
